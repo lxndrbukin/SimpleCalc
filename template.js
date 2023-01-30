@@ -15,7 +15,7 @@ function calcTemplate() {
     3,
     '.',
     0,
-    'AC',
+    'C',
     '=',
   ];
   const renderedBtns = btns
