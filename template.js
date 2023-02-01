@@ -18,12 +18,10 @@ function calcTemplate() {
     'C',
     '=',
   ];
+
   const renderedBtns = btns
     .map(
-      (btn) =>
-        /*html*/ `<button class='calc-button ${
-          btn === '=' ? 'equal' : ''
-        }'>${btn}</button>`
+      (btn) => /*html*/ `<button class='calc-button btn-${btn}'>${btn}</button>`
     )
     .join('');
   return /*html*/ `

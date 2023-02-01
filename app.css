@@ -3,6 +3,7 @@
   --orange: #f78764;
   --orange-two: #f25d2f;
   --blue: #a0cbde;
+  --gray: #dbd9d9;
 }
 
 body {
@@ -20,7 +21,6 @@ body {
   width: 400px;
   height: 450px;
   border: 0;
-  border-left: 1px solid var(--dark);
   margin: auto;
   border-radius: 5px;
   overflow: hidden;
@@ -62,15 +62,28 @@ body {
   font-size: 25px;
 }
 
-.calc .calc-buttons .equal {
+.calc .calc-buttons .calc-button:active {
+  background-color: var(--gray);
+}
+
+.calc .calc-buttons .btn-\= {
   grid-row-start: 2;
   grid-row-end: 6;
   grid-column-start: 4;
   grid-column-end: 5;
   height: 100%;
   background-color: var(--orange);
+  border: none;
 }
 
-.calc .calc-buttons .equal:hover {
+.calc .calc-buttons .btn-\/ {
+  border-right: none;
+}
+
+.calc .calc-buttons .btn-\., .calc .calc-buttons .btn-C, .calc .calc-buttons .btn-0 {
+  border-bottom: none;
+}
+
+.calc .calc-buttons .equal:active {
   background-color: var(--orange-two);
 }

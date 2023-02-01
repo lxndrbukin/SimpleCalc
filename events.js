@@ -44,8 +44,8 @@ window.addEventListener('keypress', (e) => {
         default:
           if (input.value === 'Error') {
             input.value = '';
-          } else if (!input.value.includes('.')) {
-            if (input.value.startsWith('0')) {
+          } else if (input.value === '0') {
+            if (e.key !== '.') {
               input.value = '';
             }
           }
